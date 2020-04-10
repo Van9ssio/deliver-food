@@ -6,6 +6,7 @@
   <title>Delivery food - Доставка еды на дом</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,7 @@
         <img src="img/enterbutton.svg" alt="user" class="button_icon">
         <span class="button_text">Войти</span>
       </button>
-      <button class="button_secondary">
+      <button class="button_secondary" id="basket-button">
         <img src="img/basketbutton.svg" alt="icon" class="button_icon">
         <span class="button_text">Корзина</span>
       </button>
@@ -43,7 +44,7 @@
                   <!--Карточки-->
   <div class="cards">
                    <!--Карточка1-->
-      <a href="restaraunts.html" class="card">
+      <a href="restaraunts.html" class="card wow fadeInUp"  data-wow-delay="0.15s">
         <img src="img/card1.png" alt="image" class="card_image">
         <div class="card_text">
           <div class="card_heading">
@@ -60,7 +61,7 @@
         </div>
       </a>
                       <!--Карточка2-->
-        <a href="restaraunts.html" class="card">
+        <a href="restaraunts.html" class="card wow fadeInUp"  data-wow-delay="0.20s">
           <img src="img/card2.png" alt="image" class="card_image">
           <div class="card_text">
             <div class="card_heading">
@@ -77,7 +78,7 @@
           </div>
         </a>
                     <!--Карточка3-->
-        <a href="restaraunts.html" class="card">
+        <a href="restaraunts.html" class="card wow fadeInUp"  data-wow-delay="0.25s">
           <img src="img/card3.png" alt="image" class="card_image">
           <div class="card_text">
             <div class="card_heading">
@@ -94,7 +95,7 @@
           </div>
         </a>
                     <!--Карточка4-->
-        <a href="restaraunts.html" class="card">
+        <a href="restaraunts.html" class="card wow fadeInUp"  data-wow-delay="0.25s">
           <img src="img/card4.png" alt="image" class="card_image">
           <div class="card_text">
             <div class="card_heading">
@@ -111,7 +112,7 @@
           </div>
         </a>
                     <!--Карточка5-->
-        <a href="restaraunts.html" class="card">
+        <a href="restaraunts.html" class="card wow fadeInUp"  data-wow-delay="0.20s">
           <img src="img/card5.png" alt="image" class="card_image">
           <div class="card_text">
             <div class="card_heading">
@@ -128,7 +129,7 @@
           </div>
         </a>
                     <!--Карточка6-->
-          <a href="restaraunts.html" class="card">
+          <a href="restaraunts.html" class="card wow fadeInUp"  data-wow-delay="0.15s">
             <img src="img/card6.png" alt="image" class="card_image">
             <div class="card_text">
               <div class="card_heading">
@@ -166,6 +167,64 @@
     </div>
   </div>
 </footer>
-
+<div class="modal">
+  <div class="modal_dialog">
+    <div class="modal_header">
+      <div class="modal_title">Корзина</div>
+      <button class="close">&times;</button>
+    </div>
+    <div class="modal_body">
+      <!--Ряд1---->
+      <div class="food_row">
+        <span class="food_name">Ролл, угорь стандарт</span>
+        <strong class="food_price">250 ₽</strong>
+        <div class="food_counter">
+          <button class="counter_button">-</button>
+          <span class="counter">1</span>
+          <button class="counter_button">+</button>
+        </div>
+      </div>
+      <!--Ряд2---->
+      <div class="food_row">
+        <span class="food_name">Ролл, угорь стандарт</span>
+        <strong class="food_price">250 ₽</strong>
+        <div class="food_counter">
+          <button class="counter_button">-</button>
+          <span class="counter">1</span>
+          <button class="counter_button">+</button>
+        </div>
+      </div>
+      <!--Ряд3---->
+      <div class="food_row">
+        <span class="food_name">Ролл, угорь стандарт</span>
+        <strong class="food_price">250 ₽</strong>
+        <div class="food_counter">
+          <button class="counter_button">-</button>
+          <span class="counter">1</span>
+          <button class="counter_button">+</button>
+        </div>
+      </div>
+      <!--Ряд4---->
+      <div class="food_row">
+        <span class="food_name">Ролл, угорь стандарт</span>
+        <strong class="food_price">250 ₽</strong>
+        <div class="food_counter">
+          <button class="counter_button">-</button>
+          <span class="counter">1</span>
+          <button class="counter_button">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal_footer">
+      <span class="pricetag">1250 ₽</span>
+      <div class="footer_buttons">
+        <button class="button button_secondary">ОФормить заказ</button>
+      <button class="button button_primary">Отмена</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
